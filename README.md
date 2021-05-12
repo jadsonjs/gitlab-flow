@@ -9,7 +9,7 @@ This document show the Gitlab flow in practices.
 
 ## Introduction
 
-![alt text](https://github.com/jadsonjs/gitlab-flow/blob/master/images/gitlab_flow.png)
+![git lab flow image](https://github.com/jadsonjs/gitlab-flow/blob/master/images/gitlab_flow.png)
 
 ### Principles
 
