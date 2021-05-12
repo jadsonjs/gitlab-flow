@@ -9,7 +9,9 @@ This document show the Gitlab flow in practices.
 
 ## Introduction
 
-![git lab flow image](https://github.com/jadsonjs/gitlab-flow/blob/master/images/gitlab_flow.png | width=300 )
+![git lab flow image](https://github.com/jadsonjs/gitlab-flow/blob/master/images/gitlab_flow.png|width=300)
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/gitlab_flow.png" width=300 align=center>
 
 ### Principles
 
@@ -28,5 +30,5 @@ This document show the Gitlab flow in practices.
 
 ### Disadvantages
 
-    - It is more complex than GitHub Workflow
-    - Git's history becomes unreadable due to the various Merge Requests between branches.
+   - It is more complex than GitHub Workflow
+   - Git's history becomes unreadable due to the various Merge Requests between branches.
