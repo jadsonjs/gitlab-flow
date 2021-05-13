@@ -30,13 +30,13 @@ What can be considered a successful workflow?
 
 A very popular flow is the [Github flow](https://guides.github.com/introduction/flow/index.html) The Github flow is a very simple flow, however it assumes that you can deploy it in production whenever you merge a feature branch into the master. 
 
-**Gitlab flow** tries to solve this problem by creating branches that represent the company's internal environments, there are more possibilities for testing and finding errors. Tests are carried out in all environments until production branch is reached.
+**GitLab flow** tries to solve this problem by creating branches that represent the company's internal environments, there are more possibilities for testing and finding errors. Tests are carried out in all environments until production branch is reached.
 
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/gitlab_flow.png" width=500 align=center>
 
 
-Gitlab flow has official documentation, but in my opinion, this documentation is just a flow description, it does not show in detail how the flow should works. For this reason, I have created this document. This documentation tries to explain each step you should execute to follow this flow. For enhancements and hotfix cycles.
+GitLab flow has official documentation, but in my opinion, this documentation is just a flow description, it does not show in detail how the flow should works. For this reason, I have created this document. This documentation tries to explain each step you should execute to follow this flow. For enhancements and hotfix cycles.
 
 ### Principles
 
@@ -59,7 +59,7 @@ Gitlab flow has official documentation, but in my opinion, this documentation is
    - Git's history becomes unreadable due to the various Merge Requests between branches.
 
 
- ## Gitlab Flow in practice  
+ ## GitLab Flow in practice  
 
 ### Enhancement flow
 
@@ -73,7 +73,7 @@ In the same way as in GitHub flow, to start a new development demand, you must c
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow2.png" width=600 align=center>
 
-Upon finalizing the demand, a *Merge Request* for the master is requested. A code review can be opened in gitlab and a discussion about the change can be started
+Upon finalizing the demand, a *Merge Request* for the master is requested. A code review can be opened in GitLab and a discussion about the change can be started
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow3.png" width=600 align=center>
 
