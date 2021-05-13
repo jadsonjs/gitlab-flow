@@ -61,17 +61,26 @@ Gitlab flow has official documentation, but in my opinion, this documentation is
 
 The flow starts with the branch master, the pre-production environment and the production environment.
 
-In the same way as in GitHub flow, to start a new development demand, you must create a specific branch for this demand and periodically perform pushes for branche of the same name as the remote repository.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow1.png" width=600 align=center>
 
+In the same way as in GitHub flow, to start a new development demand, you must create a specific branch for this demand and periodically perform pushes for branche of the same name as the remote repository.
+
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow2.png" width=600 align=center>
+
+Upon finalizing the demand, a *Merge Request* for the master is requested. A code review can be opened in gitlab and a discussion about the change can be started
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow3.png" width=600 align=center>
 
+When approved, the change must be integrated into the master branch.
+
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow4.png" width=600 align=center>
 
+A merge must then be made between the master branch and the branch of the pre-production environment. The pipeline should be executed to build the project and run the automated tests.
+
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow5.png" width=600 align=center>
+
+When passing in the automated tests, a merge must be done for the production branch. The pipeline should be executed again to deploy in production. A tag must be created to mark a stable version of the system and the branch of the task must be removed to make the repository more organized.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow6.png" width=600 align=center>
 
@@ -114,7 +123,7 @@ At the end of the cycle, all changes are published in production. All non-perman
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow15.png" width=600 align=center>
 
-Alternatively, for urgent tasks, you can use the cherry-pick command to get just a specific commit and send it to the other system environments.
+Alternatively, for urgent tasks, you can use the **cherry-pick** command to get just a specific commit and send it to the other system environments.
 So, for example, you can send only one specific commit to production while the others are still waiting for manual tests to finish in the pre-production branch.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow16.png" width=600 align=center>
