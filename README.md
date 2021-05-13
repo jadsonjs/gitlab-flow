@@ -1,4 +1,4 @@
-# Gitlab Flow
+# GitLab Flow
 
 
 ## Official Documentation
@@ -56,3 +56,41 @@ Gitlab flow has official documentation, but in my opinion, this documentation is
 
 
  ## Gitlab Flow in practice  
+
+
+The flow starts with the branch master, the pre-production environment and the production environment.
+
+In the same way as in GitHub flow, to start a new development demand, you must create a specific branch for this demand and periodically perform pushes for branche of the same name as the remote repository.
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow1.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow2.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow3.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow4.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow5.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow6.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow7.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow8.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow9.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow10.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow11.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow12.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow13.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow14.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow15.png" width=500 align=center>
+
+<img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow16.png" width=500 align=center>
+
