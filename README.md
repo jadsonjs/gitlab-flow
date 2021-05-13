@@ -1,5 +1,9 @@
 # GitLab Flow
 
+***Jadson Santos - jadsonjs@gmail.com***
+
+***Last updated: 12/05/2021***
+
 
 ## Official Documentation
 
@@ -59,12 +63,13 @@ Gitlab flow has official documentation, but in my opinion, this documentation is
 
 ### Enhancement flow
 
-The flow starts with the branch master, the pre-production environment and the production environment.
+The flow starts with the **master** branch, the **pre-production** environment branch, and the **production** environment branch. All these branches should be
+protected, for developers do not commit directly to them.
 
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow1.png" width=600 align=center>
 
-In the same way as in GitHub flow, to start a new development demand, you must create a specific branch for this demand and periodically perform pushes for branche of the same name as the remote repository.
+In the same way as in GitHub flow, to start a new development demand, you must create a specific branch for this demand and periodically perform pushes for branche of the same name to the remote repository.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow2.png" width=600 align=center>
 
@@ -76,11 +81,13 @@ When approved, the change must be integrated into the master branch.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow4.png" width=600 align=center>
 
-A merge must then be made between the master branch and the branch of the pre-production environment. The pipeline should be executed to build the project and run the automated tests.
+A merge must then be made between the **master** branch and the pre-production environment branch. A pipeline should be executed to build the project and run the automated tests.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow5.png" width=600 align=center>
 
-When passing in the automated tests, a merge must be done for the production branch. The pipeline should be executed again to deploy in production. A tag must be created to mark a stable version of the system and the branch of the task must be removed to make the repository more organized.
+When passing in the automated tests, a merge must be done for the production branch. A pipeline should be executed again to run the automated tests one more time and deploy to production.
+
+ A tag must be created to mark a stable version of the system and the feature branch must be removed to make the repository more organized.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow6.png" width=600 align=center>
 
@@ -102,20 +109,23 @@ Request a *Merge Request* for the master branch. Usually, as in the enhancement 
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow10.png" width=600 align=center>
 
-Wait for the merge request to be approved and the build of the master branch to pass, indicating that there are no errors in your commit.
+Wait for the *Merge Request* to be approved and the build of the master branch to pass, indicating that there are no errors in your commit.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow11.png" width=600 align=center>
 
 When automatic tests pass in the master branch, due to urgency, you should not wait for the master branch to be merged in other environments branches. Make a *merge / merge request* to all other branches of internal environments.
-Create a tag, to mark the error correction system version.
+
+Create a tag, to mark a new system version.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow12.png" width=600 align=center>
 
-Only now delete the error correction branches. The enhancement branches remain in the repository and their correction is in all environments of the system.
+Only now delete the error correction branch. The enhancement branches remain in the repository and your correction is in all environments of the system.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow13.png" width=600 align=center>
 
-When the rest of the changes are completed, the improvements will be made available in production without erasing the error correction, as it was already integrated into the master branch of the project. A version tag with improvements is marked.
+When the rest of the changes are completed, the improvements will be made available in production without erasing the error correction, as it was already integrated into the master branch of the project. 
+
+A version tag with improvements is marked.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow14.png" width=600 align=center>
 
@@ -124,7 +134,7 @@ At the end of the cycle, all changes are published in production. All non-perman
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow15.png" width=600 align=center>
 
 Alternatively, for urgent tasks, you can use the **cherry-pick** command to get just a specific commit and send it to the other system environments.
-So, for example, you can send only one specific commit to production while the others are still waiting for manual tests to finish in the pre-production branch.
+So, for example, you can send only one specific commit to production while the others are still waiting for manual tests to finish, in the pre-production branch.
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow16.png" width=600 align=center>
 
