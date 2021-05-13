@@ -26,7 +26,7 @@ What can be considered a successful workflow?
 
 A very popular flow is the [Github flow](https://guides.github.com/introduction/flow/index.html) The Github flow is a very simple flow, however it assumes that you can deploy it in production whenever you merge a feature branch into the master. 
 
-**Gitlab flow tries** try to solve this problem by creating branches that represent the company's internal environments, there are more possibilities for testing and finding errors. Tests are carried out in all environments until production branch is reached.
+**Gitlab flow** tries to solve this problem by creating branches that represent the company's internal environments, there are more possibilities for testing and finding errors. Tests are carried out in all environments until production branch is reached.
 
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/gitlab_flow.png" width=500 align=center>
