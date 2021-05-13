@@ -95,6 +95,11 @@ When passing in the automated tests, a merge must be done for the production bra
 
 In the event of an urgent change that cannot wait for the master to be merge in production. It is possible to create a branch to realize the urgent task from the production branch. This would be a flow equivalent to the "hotfix" branch of GitFlow.
 
+Usually, these urgent changes are error corrections. And few commits are maded.
+
+Let's start with a repository where there are 2 tasks committed to the master branch, but which have not yet been made available in production.
+Suddenly, an error arises to be corrected in production as soon as possible.
+
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow7.png" width=600 align=center>
 
 Create an error correction branch from the production branch.
@@ -113,7 +118,9 @@ Wait for the *Merge Request* to be approved and the build of the master branch t
 
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/flow11.png" width=600 align=center>
 
-When automatic tests pass in the master branch, due to urgency, you should not wait for the master branch to be merged in other environments branches. Make a *merge / merge request* to all other branches of internal environments.
+When automatic tests pass in the master branch, due to urgency, you should not wait for the master branch to be merged in other environments branches. Make a *merge / merge request* **from you feature branch** to **all** other branches of internal environments.
+
+As your feature branch is the production branch with your new commit, usually just a unique commit will be merged to the production branch. Make sure to merge these changes to all environments branches. Or the error correction / urgent change can be lost.
 
 Create a tag, to mark a new system version.
 
