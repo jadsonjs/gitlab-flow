@@ -2,7 +2,7 @@
 
 ***Jadson Santos - jadsonjs@gmail.com***
 
-***Last updated: 12/05/2021***
+***Last updated: 16/05/2021***
 
 
 ## Official Documentation
@@ -36,7 +36,7 @@ A very popular flow is the [Github flow](https://guides.github.com/introduction/
 <img src="https://github.com/jadsonjs/gitlab-flow/blob/master/images/gitlab_flow.png" width=500 align=center>
 
 
-GitLab flow has official documentation, but in my opinion, this documentation is just a flow description, it does not show in detail how the flow should works. For this reason, I have created this document. This documentation tries to explain each step you should execute to follow this flow. For enhancements and hotfix cycles.
+GitLab flow has official documentation, but in my opinion, this documentation is just a flow description, it does not show in detail how the flow works, step by step. For this reason, I have created this document. This documentation tries to explain, in my understanding, each step you should execute to follow this flow. For enhancements and hotfix cycles.
 
 ### Principles
 
