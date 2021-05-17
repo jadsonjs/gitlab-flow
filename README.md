@@ -58,6 +58,15 @@ GitLab flow has official documentation, but in my opinion, this documentation is
    - It is more complex than GitHub Workflow
    - Git's history becomes unreadable due to the various Merge Requests between branches.
 
+### GitLab Flow vs GitHub Flow
+
+The biggest difference between GitLab Flow and GitHub Flow are the branches of the environment in GitLab Flow (for example, pre-production and production)
+GitHub flow assumes that if you are on the master you can go to production. GitLab flow allows the code to pass through internal environments before it reaches production.
+
+### GitLab Flow vs GitFlow
+
+GitLab flow is more favorable to the application of Continuous Integration then Gitfow. The division master/develop makes the Continuous Delivery and the Continuous Integration harder with Gitflow. In GitFlow the creation of branches such as hotfix and release can make integration complex.
+
 
  ## GitLab Flow in practice  
 
