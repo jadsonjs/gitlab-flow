@@ -165,14 +165,14 @@ Production -> Pre-production -> Master (ERROR)
 Despite the name, the GitLab flow is not a flow to be applied just on gitlab.com. Can be used with any repository the uses Git.
 
 ### A word about Squash Commits
-It is often a good idea to use [squash commits](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---squashltcommitgt), in order to maintain a clean and readable Git history. But there are a few points to keep in mind when using GitLab Flow with quashing.
+It is often a good idea to use [squash commits](https://git-scm.com/docs/git-commit#Documentation/git-commit.txt---squashltcommitgt), in order to maintain a clean and readable Git history. But there are a few points to keep in mind when using GitLab Flow with squashing.
 
 The peculiarity of a squash commit is that a new commit (with a new SHA-1 hash) is created. Thus the git history of the branches would differ when a merge request is squash merged first into the master branch and then into the environment branches. This would make it more difficult to merge between environment branches.
 
 ### Enhancement flow
 When a new feature is merged into the master branch, you can use squash commits without hesitation. In the best case you should delete the function branch directly after the merge.
 
-But whenever the master branch is merged into an environment branch, you must never use quash commits, as this would result in different git histories for the branches.
+But whenever the master branch is merged into an environment branch, you must never use squash commits, as this would result in different git histories for the branches.
 
 ### Hotfix flow
 When a hotfix is needed, you must be carfully. Never squash merge the remote hotfix branch into several branches, as each squash merge would result into a new commit (with different SHA-1 hashs).
